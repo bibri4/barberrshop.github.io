@@ -121,7 +121,7 @@ footer .blocks .logo{
 .transition-block img {
   position: relative;
   top: 0px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
                             /* vtotoy block */
@@ -344,5 +344,6 @@ font-size: 24px;
     border-top: 1px dotted #000; /* Делаем разделитель в виде точек */
     margin: 15px 0; /* Отступы сверху и снизу */
 }
+
 
 
