@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Включает плавную прокрутку для всей страницы */
+}
+
+body {
+    font-family: 'poppins', sans-serif;  /* стиль текста используемого по усмолчанию */
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container hr {
+    color: #ffffff;
+    height: 1px;
+    background-color: #ffffff;
+    border: none;
+    margin: 0 auto;
+    width: calc(100% - 100px); /* 50px с каждой стороны */
+    max-width: 1800px;
+}
+
+.container{    /* pomoyemu shirina stranitsy */
+position: relative;
+padding-top: 20px; /* Для линии сверху */
+}
+
+.wrapper{
+background: url('img/1bg2.png') no-repeat center center;
+min-height: 100vh;
+max-width: 1920px;
+}
+
+.logo {
+    height: 90px; /* Или любой нужный размер */
+    width: auto;
+    position: relative;
+    top: 2px;
+    left: 29px;
+}
+
+header nav{
+    float: right;
+    width: 40%;    /* shirina rastuazeniya */
+    padding-right: 45px;
+}
+
+header nav ul {
+        z-index: 2;
+        position: relative;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        top: 35px;
+}
+
+header nav ul li.btn a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+header nav ul li.btn-cta a {
+    background-color: #F1B500; /* золотой цвет, популярный у барбершопов */
+    border-radius: 5px; /* скругленные углы */
+    color: #000000; /* цвет текста */
+    font-weight: bold; /* жирный текст */
+    padding: 10px 20px; /* немного больше отступов */
+    margin-left: 10px; /* отступ слева */
+}
+
+.hero-section {
+    margin-top: 17vh; /* 25% высоты экрана */
+    text-align: center; /* Выравнивание по центру */
+    padding: 0 20px; /* Отступы по бокам для мобильных */
+}
+
+.hero-content {
+    max-width: 800px; /* Ограничение ширины контента */
+    margin: 0 auto; /* Центрирование блока */
+}
+
+.hero-image {
+    max-width: 180px; /* Размер изображения */
+    height: auto;
+    margin-bottom: 70px; /* Отступ между изображением и текстом */
+    display: block; /* Для корректного центрирования */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-text h1 {
+    font-size: 28px;
+    color: #ffffff; /* Или другой цвет по вашему дизайну */
+}
+
+.transition-block img {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: auto;
+}
+                            /* vtotoy block */
+
+
+.about-section {
+    background: url('img/2bg.png') no-repeat center center/cover;
+    padding: 0px;
+    color: #000000;
+}
+
+.about-section img{
+position: relative;
+top: -25px;
+max-width: 100%
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 0 0 45%;
+    margin-left: -10%; /* Сдвигаем фото левее от центра */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.3); */
+}
+
+.about-text {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        text-align: center;
+}
+
+
+.about-text h2 {
+    font-size: 96px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+
+.services-btn {
+    background: transparent;
+    color: #000000; /* Черный текст */
+    border: 1.5px solid #000000;
+    border-radius: 50px; /* Сильно скругленные углы */
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-btn:hover {
+    scale: 105%;
+    color: #000000; /* Черный текст при наведении */
+}
+                                              /* third select */
+
+.barbers-section {
+    background-color: #1E1E1E; /* Черный фон */
+    color: #ffffff; /* Белый текст */
+    max-height: 1080px; /* Занимает всю высоту страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Чтобы скрыть элементы, выходящие за пределы */
+}
+
+.barbers-title {
+    padding-top: 70px;
+    font-size: 96px; /* Размер шрифта для заголовка */
+    margin-bottom: 30px; /* Отступ между заголовком и изображениями */
+}
+
+.barbers-images {
+    display: flex;
+    justify-content: center; /* Центрирование изображений */
+    z-index: 1;
+    position: relative;
+}
+
+.barber-img {
+    width: 360px; /* Ширина изображения */
+    height: 580px; /* Высота изображения */
+    margin: 0 15px; /* Отступы между изображениями по 30px */
+    object-fit: cover; /* Обеспечивает правильное обрезание изображения */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.background-image {
+    position: absolute; /* Позволяет наложить фоновое изображение на другие элементы */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирует фоновое изображение */
+    /* padding-bottom: 900px; */
+    z-index: 0; /* Устанавливает изображение на задний план */
+}
+
+
+
+.text-overlay {
+    position: absolute; /* Позволяет наложить текст на изображение */
+    top: 70%; /* Начинаем чуть ниже центра */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирует текст по горизонтали */
+    color: #000000; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+    padding: 20px; /* Отступы внутри блока */
+    z-index: 2;
+    width: 310px; /* Установите нужную ширину */
+    height: 250px;
+}
+
+.text-overlay h2{
+margin: 20px 0;
+padding-top: 20px;
+}
+.text-overlay p{
+    padding-bottom: 30px;
+    font-size: medium;
+    padding-bottom: 50px;
+}
+
+.barbers-images .btn{
+      background-color: #F1B500;
+    color: #000000;
+    border: none;
+    text-align: center;
+    padding: 20px 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 2;    
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.bord-3 {
+    top: 50px;
+    position: relative;
+     z-index: 1;
+}
+            /* fourth block */
+
+.services-section {
+    text-align: center; /* Центрирование текста */
+    padding: 40px; /* Отступы вокруг секции */
+    color: #000;
+    background: url('img/bg4.png') no-repeat center center/cover;
+}
+
+.services-title {
+    font-size: 96px; /* Размер заголовка */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+.services-container {
+    display: flex; /* Используем flexbox для размещения блоков */
+    justify-content: center;
+}
+
+.services-list {
+font-weight: normal;
+font-size: 24px;
+    text-align: left; /* Текст слева */
+    padding-right: 20px; /* Отступ справа */
+}
+
+.service-item {
+    display: flex; /* Используем flexbox для размещения названия и цены */
+    justify-content: space-between; /* Распределяем пространство между названием и ценой */
+
+}
+
+.service-image {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.service-name{
+    max-width: 650px;
+
+}
+
+.divider {
+    border: none; /* Убираем стандартную рамку */
+    border-top: 1px dotted #000; /* Делаем разделитель в виде точек */
+    margin: 15px 0; /* Отступы сверху и снизу */
+}
+
+.bord-4 {
+    top: 75px;
+    position: relative;
+    z-index: 1;
+    max-width: 100%
+}
+
+                          /* ppyatiy list GALLERY */
+
+.gallery {
+    padding-top: 40px;
+    position: relative;
+    background-color: #1E1E1E; /* Чисто черный фон */
+    overflow: hidden; /* Чтобы псевдоэлемент не выходил за пределы */
+    color: white; /* Чтобы текст был виден на темном фоне */
+    text-align: center;
+    margin: 40px 0;
+}
+
+.gallery::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('img/bg5.png') no-repeat center center/cover;
+    opacity: 1; /* Прозрачность фона, регулируйте по желанию */
+    z-index: 1;
+}
+
+.gallery > * {
+    position: relative;
+    z-index: 2; /* Содержимое поверх фонового изображения */
+}
+
+.gallery h1 {
+    font-size: 96px;
+    margin-bottom: 40px;
+    font-weight: bold;
+
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gallery-item img {
+    margin: 0 20px;
+}
+
+.top-row img {
+    width: 550px; /* или любой другой размер */
+}
+
+.center-row img {
+    width: 1140px; /* или любой другой размер */
+}
+
+.bottom-row img {
+    width: 350px; /* или любой другой размер */
+    margin: 0 23px;
+}
+
+                          /* shestoy list contacts */
+
+.contact-block {
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/bg6.png');
+    max-width: 100%;
+}
+
+.contact-info {
+    text-align: center;
+    color: #000;
+    margin: 0 20px; /* Отступы для текста */
+    z-index: 2; /* Чтобы текст был поверх изображений */
+}
+
+.contact-info h2{
+    font-size: 96px;
+    margin-top: -30px;
+    position: relative;
+}
+
+.contact-label {
+    font-weight: normal; /* Жирный шрифт для заголовков */
+    font-size: 24px;
+    margin: 10px 0 5px; /* Отступы между заголовками и деталями */
+}
+
+.contact-detail {
+    font-size: 28px; /* Размер шрифта для деталей */
+    font-weight: bold;
+    margin-bottom: 15px; /* Отступы между деталями */
+}
+.bord-61 {
+    top:-65px;
+    position: relative;
+    max-width: 100%;
+}
+.bord-62 {
+    top:60px;
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+}
+
+.screenshot-block {
+    max-width: 1920px; /* Занимает всю ширину страницы */
+    max-height: 900px; /* Занимает всю высоту окна браузера */
+    overflow: hidden; /* Скрываем переполнение */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    background-color: #f0f0f0; /* Фоновый цвет блока */
+    margin-top: -30px;
+    z-index: 1;
+}
+
+.screenshot-image {
+    width: 100%; /* Изображение занимает всю ширину блока */
+    height: auto; /* Соотношение сторон сохраняется */
+    max-height: 100%; /* Ограничиваем высоту, чтобы избежать искажения */
+}
+
+                                                /* FOOOOOTER */
+.footer {
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    display: flex;
+    justify-content: space-between; /* Разделяем содержимое на три части */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.footer-content {
+    width: 100%; /* Занимает всю ширину */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.footer-logo {
+    width: auto; /* Автоматическая ширина для логотипа */
+    height: 90px; /* Высота логотипа */
+    padding: 20px;
+    right: -100px;
+    position: relative;
+}
+
+.footer-buttons span {
+    cursor: pointer; /* Указатель при наведении */
+    color: #ffffff;
+}
+
+.footer span a{
+    color: #ffffff;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center; /* Центрируем по вертикали */
+    right: 100px;
+    position: relative;
+}
+
+.arrow-icon {
+    width: 20px; /* Ширина стрелки */
+    height: auto; /* Автоматическая высота */
+    margin-left: 5px; /* Отступ слева от текста "Наверх" */
+}
+
+.footer-buttons span {
+    cursor: pointer; /* Указатель при наведении */
+    color: #ffffff;
+}
+
+.footer-buttons span:not(:last-child)::after {
+    content: '/'; /* Добавляем слэш */
+    margin-left: 5px; /* Отступ слева от слэша */
+    margin-right: 2px;
+}
