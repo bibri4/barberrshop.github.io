@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,12 +10,15 @@ html {
 }
 
 body {
-    font-family: 'poppins', sans-serif;  /* стиль текста используемого по усмолчанию */
-    font-weight: 600;
+    font-family: 'Spectral SC', sans-serif, 'STIX Two Text';  /* стиль текста используемого по усмолчанию */
+    font-weight: 400;
     color: #ffffff;
     font-size: 16px;
-    
     width: 100%;
+}
+
+.custom-fonts{
+    font-family: 'Spectral SC', Georgia, serif;
 }
 
 a{
@@ -28,13 +31,13 @@ a{
     background-color: #ffffff;
     border: none;
     margin: 0 auto;
-    width: calc(100% - 100px); /* 50px с каждой стороны */
+    width: calc(100% - 100px); 
     max-width: 1800px;
 }
 
-.container{    /* pomoyemu shirina stranitsy */
+.container{   
 position: relative;
-padding-top: 20px; /* Для линии сверху */
+padding-top: 20px; 
 }
 
 .wrapper{
@@ -44,7 +47,7 @@ max-width: 1920px;
 }
 
 .logo {
-    height: 90px; /* Или любой нужный размер */
+    height: 90px;
     width: auto;
     position: relative;
     top: 2px;
@@ -69,34 +72,35 @@ header nav ul {
 header nav ul li.btn a {
     color: #ffffff;
     font-size: 20px;
+    font-weight: 600;
 }
 
 
 header nav ul li.btn-cta a {
-    background-color: #F1B500; /* золотой цвет, популярный у барбершопов */
-    border-radius: 5px; /* скругленные углы */
-    color: #000000; /* цвет текста */
-    font-weight: bold; /* жирный текст */
-    padding: 10px 20px; /* немного больше отступов */
-    margin-left: 10px; /* отступ слева */
+    background-color: #F1B500;
+    border-radius: 5px; 
+    color: #000000; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    margin-left: 10px; 
 }
 
 .hero-section {
-    margin-top: 17vh; /* 25% высоты экрана */
-    text-align: center; /* Выравнивание по центру */
-    padding: 0 20px; /* Отступы по бокам для мобильных */
+    margin-top: 17vh; 
+    text-align: center; 
+    padding: 0 20px; 
 }
 
 .hero-content {
-    max-width: 800px; /* Ограничение ширины контента */
-    margin: 0 auto; /* Центрирование блока */
+    max-width: 830px; 
+    margin: 0 auto;
 }
 
 .hero-image {
-    max-width: 180px; /* Размер изображения */
+    max-width: 180px; 
     height: auto;
-    margin-bottom: 70px; /* Отступ между изображением и текстом */
-    display: block; /* Для корректного центрирования */
+    margin-bottom: 70px; 
+    display: block; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,6 +108,7 @@ header nav ul li.btn-cta a {
 .hero-text h1 {
     font-size: 28px;
     color: #ffffff; /* Или другой цвет по вашему дизайну */
+    font-weight: 500;
 }
 
 .transition-block img {
@@ -138,14 +143,13 @@ max-width: 100%
 
 .about-image {
     flex: 0 0 45%;
-    margin-left: -10%; /* Сдвигаем фото левее от центра */
+    margin-left: -10%; 
 }
 
 .about-image img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    /* box-shadow: 0 5px 15px rgba(0,0,0,0.3); */
 }
 
 .about-text {
@@ -153,7 +157,9 @@ max-width: 100%
     display: flex;
     flex-direction: column;
     align-items: center;
-        text-align: center;
+    text-align: center;
+    font-family: 'STIX Two Text';
+    font-weight: 600;
 }
 
 
@@ -161,72 +167,76 @@ max-width: 100%
     font-size: 96px;
     margin-bottom: 20px;
     color: #000000;
+    font-weight: 800;
 }
 
-.about-text p {
+.verh {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .highlight {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     color: #000000;
 }
 
 .services-btn {
     background: transparent;
-    color: #000000; /* Черный текст */
-    border: 1.5px solid #000000;
-    border-radius: 50px; /* Сильно скругленные углы */
-    padding: 15px 30px;
+    color: #000000; 
+    border: 2px solid #000000;
+    border-radius: 50px;
+    padding: 15px 50px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 30px;
     position: relative;
     overflow: hidden;
+    font-family: 'spectral SC';
 }
 
 .services-btn:hover {
     scale: 105%;
-    color: #000000; /* Черный текст при наведении */
+    color: #000000; 
 }
                                               /* third select */
 
 .barbers-section {
-    background-color: #1E1E1E; /* Черный фон */
-    color: #ffffff; /* Белый текст */
-    max-height: 1080px; /* Занимает всю высоту страницы */
+    background-color: #1E1E1E;
+    color: #ffffff; 
+    max-height: 1080px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden; /* Чтобы скрыть элементы, выходящие за пределы */
+    overflow: hidden; 
 }
 
 .barbers-title {
     padding-top: 70px;
-    font-size: 96px; /* Размер шрифта для заголовка */
-    margin-bottom: 30px; /* Отступ между заголовком и изображениями */
+    font-size: 96px; 
+    margin-bottom: 30px; 
+    font-weight: 800;
 }
 
 .barbers-images {
     display: flex;
-    justify-content: center; /* Центрирование изображений */
+    justify-content: center;
     z-index: 1;
     position: relative;
 }
 
 .barber-img {
-    width: 360px; /* Ширина изображения */
-    height: 580px; /* Высота изображения */
-    margin: 0 15px; /* Отступы между изображениями по 30px */
-    object-fit: cover; /* Обеспечивает правильное обрезание изображения */
+    max-width: 360px; 
+    max-height: 580px; 
+    margin: 0 15px; 
+    object-fit: cover; 
     position: relative;
     z-index: 1;
     display: flex;
@@ -234,26 +244,25 @@ max-width: 100%
 }
 
 .background-image {
-    position: absolute; /* Позволяет наложить фоновое изображение на другие элементы */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Центрирует фоновое изображение */
-    /* padding-bottom: 900px; */
-    z-index: 0; /* Устанавливает изображение на задний план */
+    transform: translate(-50%, -50%); 
+    z-index: 0; 
 }
 
 
 
 .text-overlay {
-    position: absolute; /* Позволяет наложить текст на изображение */
-    top: 70%; /* Начинаем чуть ниже центра */
+    position: absolute;
+    top: 70%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Центрирует текст по горизонтали */
-    color: #000000; /* Цвет текста */
-    text-align: center; /* Центрирование текста */
-    padding: 20px; /* Отступы внутри блока */
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    text-align: center; 
+    padding: 20px; 
     z-index: 2;
-    width: 310px; /* Установите нужную ширину */
+    width: 330px; 
     height: 250px;
 }
 
@@ -262,9 +271,11 @@ margin: 20px 0;
 padding-top: 20px;
 }
 .text-overlay p{
-    padding-bottom: 30px;
     font-size: medium;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    font-family: 'STIX Two Text';
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .barbers-images .btn{
@@ -272,12 +283,12 @@ padding-top: 20px;
     color: #000000;
     border: none;
     text-align: center;
-    padding: 20px 45px;
+    padding: 20px 35px;
     border-radius: 50px;
     cursor: pointer;
     z-index: 2;    
     font-size: 18px;
-
+    font-family: 'Spectral SC';
     font-weight: bold;
 }
 
@@ -289,38 +300,42 @@ padding-top: 20px;
             /* fourth block */
 
 .services-section {
-    text-align: center; /* Центрирование текста */
-    padding: 40px; /* Отступы вокруг секции */
+    text-align: center; 
+    padding-top: 40px; 
     color: #000;
     background: url('img/bg4.png') no-repeat center center/cover;
 }
 
 .services-title {
-    font-size: 96px; /* Размер заголовка */
-    margin-bottom: 40px; /* Отступ снизу */
+    font-size: 96px; 
+    margin-bottom: 40px;
+    font-weight: 800; 
 }
 
 .services-container {
-    display: flex; /* Используем flexbox для размещения блоков */
+    display: flex;
     justify-content: center;
 }
 
 .services-list {
-font-weight: normal;
+font-weight: 500;
 font-size: 24px;
-    text-align: left; /* Текст слева */
-    padding-right: 20px; /* Отступ справа */
+text-align: left; 
+padding-right: 20px; 
+font-family: 'STIX Two Text';
+margin-bottom: 50px;
+/* -------------------------------------------------------------------- */
 }
 
 .service-item {
-    display: flex; /* Используем flexbox для размещения названия и цены */
-    justify-content: space-between; /* Распределяем пространство между названием и ценой */
+    display: flex; 
+    justify-content: space-between; 
 
 }
 
 .service-image {
-    max-width: 100%; /* Ограничиваем ширину изображения */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .service-name{
@@ -329,28 +344,27 @@ font-size: 24px;
 }
 
 .divider {
-    border: none; /* Убираем стандартную рамку */
-    border-top: 1px dotted #000; /* Делаем разделитель в виде точек */
-    margin: 15px 0; /* Отступы сверху и снизу */
+    border: none; 
+    border-top: 1px dotted #000; 
+    margin: 15px 0; 
 }
 
 .bord-4 {
-    top: 75px;
+    top: 30px;
     position: relative;
     z-index: 1;
     max-width: 100%
+    
 }
 
                           /* ppyatiy list GALLERY */
 
 .gallery {
-    padding-top: 40px;
+    padding-top: 70px;
     position: relative;
-    background-color: #1E1E1E; /* Чисто черный фон */
-    overflow: hidden; /* Чтобы псевдоэлемент не выходил за пределы */
-    color: white; /* Чтобы текст был виден на темном фоне */
+    background-color: #1E1E1E; 
+    overflow: hidden; 
     text-align: center;
-    margin: 40px 0;
 }
 
 .gallery::before {
@@ -358,19 +372,19 @@ font-size: 24px;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: url('img/bg5.png') no-repeat center center/cover;
-    opacity: 1; /* Прозрачность фона, регулируйте по желанию */
+    opacity: 1; 
     z-index: 1;
 }
 
 .gallery > * {
     position: relative;
-    z-index: 2; /* Содержимое поверх фонового изображения */
+    z-index: 2; 
 }
 
 .gallery h1 {
     font-size: 96px;
     margin-bottom: 40px;
-    font-weight: bold;
+    font-weight: 800;
 
 }
 
@@ -392,15 +406,15 @@ font-size: 24px;
 }
 
 .top-row img {
-    width: 550px; /* или любой другой размер */
+    width: 550px; 
 }
 
 .center-row img {
-    width: 1140px; /* или любой другой размер */
+    width: 1140px; 
 }
 
 .bottom-row img {
-    width: 350px; /* или любой другой размер */
+    width: 350px;
     margin: 0 23px;
 }
 
@@ -416,29 +430,34 @@ font-size: 24px;
 .contact-info {
     text-align: center;
     color: #000;
-    margin: 0 20px; /* Отступы для текста */
-    z-index: 2; /* Чтобы текст был поверх изображений */
+    margin: 0 30px;
+    z-index: 2; 
+    margin-bottom: 40px;
 }
 
 .contact-info h2{
     font-size: 96px;
     margin-top: -30px;
     position: relative;
+    font-weight: 800;
+    padding-bottom: 45px;
 }
 
 .contact-label {
-    font-weight: normal; /* Жирный шрифт для заголовков */
+    font-weight: 500; 
     font-size: 24px;
-    margin: 10px 0 5px; /* Отступы между заголовками и деталями */
+    margin: 10px 0 15px;
+    font-family: 'STIX Two Text';
 }
 
 .contact-detail {
-    font-size: 28px; /* Размер шрифта для деталей */
-    font-weight: bold;
-    margin-bottom: 15px; /* Отступы между деталями */
+    font-size: 28px; 
+    font-weight: 700;
+    margin-bottom: 15px; 
+    font-family: 'STIX Two Text';
 }
 .bord-61 {
-    top:-65px;
+    top:-30px;
     position: relative;
     max-width: 100%;
 }
@@ -450,43 +469,43 @@ font-size: 24px;
 }
 
 .screenshot-block {
-    max-width: 1920px; /* Занимает всю ширину страницы */
-    max-height: 900px; /* Занимает всю высоту окна браузера */
-    overflow: hidden; /* Скрываем переполнение */
+    max-width: 1920px; 
+    max-height: 900px; 
+    overflow: hidden; 
     display: flex;
-    justify-content: center; /* Центрируем содержимое по горизонтали */
-    align-items: center; /* Центрируем содержимое по вертикали */
-    background-color: #f0f0f0; /* Фоновый цвет блока */
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f0f0f0;
     margin-top: -30px;
     z-index: 1;
 }
 
 .screenshot-image {
-    width: 100%; /* Изображение занимает всю ширину блока */
-    height: auto; /* Соотношение сторон сохраняется */
-    max-height: 100%; /* Ограничиваем высоту, чтобы избежать искажения */
+    width: 100%; 
+    height: auto;
+    max-height: 100%;
 }
 
                                                 /* FOOOOOTER */
 .footer {
-    background-color: #000; /* Черный фон */
-    color: #fff; /* Белый текст */
-    padding: 20px 0; /* Отступы сверху и снизу */
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between; /* Разделяем содержимое на три части */
-    align-items: center; /* Центрируем по вертикали */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .footer-content {
-    width: 100%; /* Занимает всю ширину */
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; /* Центрируем по вертикали */
+    align-items: center; 
 }
 
 .footer-logo {
-    width: auto; /* Автоматическая ширина для логотипа */
-    height: 90px; /* Высота логотипа */
+    width: auto; 
+    height: 90px; 
     padding: 20px;
     right: -100px;
     position: relative;
@@ -495,6 +514,7 @@ font-size: 24px;
 .footer-buttons span {
     cursor: pointer; /* Указатель при наведении */
     color: #ffffff;
+    font-weight: 600;
 }
 
 .footer span a{
@@ -503,24 +523,25 @@ font-size: 24px;
 
 .back-to-top {
     display: flex;
-    align-items: center; /* Центрируем по вертикали */
+    align-items: center;
     right: 100px;
     position: relative;
+    font-weight: 800;
 }
 
 .arrow-icon {
-    width: 20px; /* Ширина стрелки */
-    height: auto; /* Автоматическая высота */
-    margin-left: 5px; /* Отступ слева от текста "Наверх" */
+    width: 20px; 
+    height: auto; 
+    margin-left: 5px;
 }
 
 .footer-buttons span {
-    cursor: pointer; /* Указатель при наведении */
+    cursor: pointer; 
     color: #ffffff;
 }
 
 .footer-buttons span:not(:last-child)::after {
-    content: '/'; /* Добавляем слэш */
-    margin-left: 5px; /* Отступ слева от слэша */
+    content: '/'; 
+    margin-left: 5px; 
     margin-right: 2px;
 }
