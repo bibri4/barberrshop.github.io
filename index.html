@@ -13,7 +13,12 @@
     <header class="container" id="home">            <!-- шапка -->
         <hr>
         <span class="logo">   <img src="img/logo12.png" alt="Логотип Barbershop" class="logo"></span>
-        <nav>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="mainNav">
             <ul>
                 <li class="btn"> <a href="#about us">О НАС</a></li>
                 <li class="btn"> <a href="#uslugi">УСЛУГИ</a></li>
@@ -52,26 +57,27 @@
             </div>
         </div>
     </div>
+    <img src="img/bord2.svg" class="bord2" style=" z-index: 2;  top: 15px;">
   </section>
                                             <!-- third block -->
   
   <div class="barbers-section" id="burbers">
-    <img src="img/bord2.svg" alt="">
+ 
       <div class="barbers-title">БАРБЕРЫ</div>
       <div class="barbers-images">
         <img src="img/Xyell.png" alt="" class="background-image">
           <div class="barber-img">
             <img src="img/barb1.png" alt="Барбер 1" class="barber-img">
             <div class="text-overlay">
-                  <h2>ДАРЬЯ</h2>
-                  <p>Наш администратор Дарья стала барбером, и эта новость всколыхнула наше заведение.</p>
-                  <button class="btn">ЗАПИСАТЬСЯ YCLIENTS</button>
+                <h2>ДАРЬЯ</h2>
+                <p>Наш администратор Дарья стала барбером, и эта новость всколыхнула наше заведение.</p>
+                <button class="btn full-version">ЗАПИСАТЬСЯ YCLIENTS</button>
+                <button class="btn mobile-version">ЗАПИСАТЬСЯ</button>
             </div>
-          
-          <img src="img/barb2.png" alt="Барбер 2" class="barber-img">
-          <img src="img/barb3.png" alt="Барбер 3" class="barber-img">
-          </div>
-      </div>
+        <img src="img/barb2.png" alt="Барбер 2" class="barber-img">
+        <img src="img/barb3.png" alt="Барбер 3" class="barber-img">
+        </div>
+    </div>
     <img src="img/bord3.svg" alt="" class="bord-3">
   </div>
                                       <!-- servise block(fourth) -->
@@ -185,6 +191,6 @@
         </div>
     </div>
 </footer>
-
+<script src="script.js" defer></script>
 </body> 
 </html>
