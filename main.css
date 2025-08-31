@@ -841,6 +841,7 @@ position: relative;
     max-width: 240px;
 }
 .services-list {
+margin: 0;
 position: relative;
 padding: 0 10px;
 top: -40px;
@@ -925,3 +926,4 @@ z-index: 2;
     }
 
 }
+
