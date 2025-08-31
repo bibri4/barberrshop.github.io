@@ -828,6 +828,8 @@ max-width: auto;
 
 .services-container {
 flex-direction: column-reverse;
+top: -50px;
+position: relative;
 }
 .service-image{
     transform: rotate(-90deg);
@@ -839,7 +841,9 @@ flex-direction: column-reverse;
     max-width: 240px;
 }
 .services-list {
+position: relative;
 padding: 0 10px;
+top: -40px;
 }
 .bord-4 {
 top: 20px;
@@ -919,4 +923,5 @@ z-index: 2;
 .show-more-btn {
         display: none;
     }
+
 }
