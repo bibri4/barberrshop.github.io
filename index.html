@@ -12,7 +12,7 @@
   <div class="wrapper">      
     <header class="container" id="home">            <!-- шапка -->
         <hr>
-        <span class="logo">   <img src="img/logo12.png" alt="Логотип Barbershop" class="logo"></span>
+        <span class="logo">   <img src="img/logo12.png" alt="Логотип" class="logo" data-desktop="img/logo12.png" data-mobile="img/logo22.png"></span>
         <div class="burger-menu" id="burgerMenu">
             <span></span>
             <span></span>
@@ -32,8 +32,8 @@
     </header>
     <section class="hero-section">
       <div class="hero-content">
-        <img src="img/logo12.png" alt="" class="hero-image">
-          <div class="hero-text">
+        <img src="img/logo12.png" alt="Логотип" class="hero-image" >
+        <div class="hero-text">
              <h1>Фирма — развивает культуру качественного бритья и стильных мужских стрижек</h1>
           </div>
       </div>
@@ -131,21 +131,31 @@
     </div>
     <img src="img/bord4.png" class="bord-4">
 </div>
-
-
-
-<!-- image block(five) -->                                        
+                                                <!-- image block(five) -->                                        
     <div class="gallery" id="gallery">
         <h1>ГАЛЛЕРЕЯ</h1>
         <div class="gallery-container">
             <div class="gallery-item top-row">
-                <img src="img/1gal.png" alt="Фото 1">
-                <img src="img/2gal.png" alt="Фото 2">
+                <img src="img/1gal.png" alt="Фото 1" class="gallery-item mobile-visible">
+                <img src="img/2gal.png" alt="Фото 2" class="gallery-item mobile-visible">
             </div>
             <div class="gallery-item center-row">
-                <img src="img/3gal.png" alt="Фото 3">
+                <img src="img/3gal.png" alt="Фото 3" class="gallery-item mobile-visible">
             </div>
             <div class="gallery-item bottom-row">
+                <img src="img/4gal.png" alt="Фото 4" class="gallery-item mobile-hidden">
+                <img src="img/5gal.png" alt="Фото 5" class="gallery-item mobile-hidden">
+                <img src="img/6gal.png" alt="Фото 6" class="gallery-item mobile-hidden">
+            </div>
+        </div>
+        <button class="show-more-btn">Ещё фото</button>
+        <!-- Оверлей с всеми фото -->
+        <div class="gallery-overlay">
+            <button class="close-overlay">×</button>
+            <div class="gallery-overlay-content">
+                <img src="img/1gal.png" alt="Фото 1">
+                <img src="img/2gal.png" alt="Фото 2">
+                <img src="img/3gal.png" alt="Фото 3">
                 <img src="img/4gal.png" alt="Фото 4">
                 <img src="img/5gal.png" alt="Фото 5">
                 <img src="img/6gal.png" alt="Фото 6">
@@ -171,13 +181,17 @@
         <img src="img/bord62.png" class="bord-62">
     </div>
     <div class="screenshot-block">
-        <img src="img/map2.png" alt="Screenshot" class="screenshot-image">
+    <img src="img/map2.png" alt="Карта" class="screenshot-image" 
+         data-desktop="img/map2.png" 
+         data-mobile="img/mapf.png">
     </div>
 
 
 <footer class="footer">
     <div class="footer-content">
-        <img src="img/logo12.png" alt="Логотип" class="footer-logo">
+        <img src="img/logo12.png" alt="Логотип" class="footer-logo" 
+     data-desktop="img/logo12.png" 
+     data-mobile="img/logo22.png">
         <div class="footer-buttons">
             <span><a href="#about us">О НАС</a></span>
             <span><a href="#uslugi">УСЛУГИ</a></span>
