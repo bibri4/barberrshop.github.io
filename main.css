@@ -121,9 +121,14 @@ header nav ul li.btn-cta a {
 
 
 .about-section {
-    background: url('img/2bg.png') no-repeat center center/cover;
-    padding: 0px;
+    background: url('img/bg32.png') no-repeat center center/cover;
     color: #000000;
+    margin-bottom: -100px; /* "Залазит" на следующую секцию */
+    position: relative;
+    z-index: 2;
+    max-width: 1920px;
+    padding: 100px 0;
+    margin-top: -100px
 }
 
 .about-section img{
@@ -216,6 +221,8 @@ max-width: 100%
     justify-content: center;
     position: relative;
     overflow: hidden; 
+    z-index: 1;
+    padding: 150px 0;
 }
 
 .barbers-title {
@@ -292,18 +299,19 @@ padding-top: 20px;
     font-weight: bold;
 }
 
-.bord-3 {
-    top: 50px;
-    position: relative;
-     z-index: 1;
-}
             /* fourth block */
 
 .services-section {
     text-align: center; 
-    padding-top: 40px; 
     color: #000;
-    background: url('img/bg4.png') no-repeat center center/cover;
+    background: url('img/bg34.png') no-repeat center center/cover;
+    margin-bottom: -30px; 
+    position: relative;
+    z-index: 2;
+    max-width: 1920px;
+    padding: 150px 0;
+    margin-top: -30px
+    
 }
 
 .services-title {
@@ -347,14 +355,6 @@ margin-bottom: 50px;
     border: none; 
     border-top: 1px dotted #000; 
     margin: 15px 0; 
-}
-
-.bord-4 {
-    top: 30px;
-    position: relative;
-    z-index: 1;
-    max-width: 100%
-    
 }
 
                           /* ppyatiy list GALLERY */
@@ -423,8 +423,14 @@ margin-bottom: 50px;
 .contact-block {
     align-items: center;
     justify-content: center;
-    background-image: url('img/bg6.png');
+    background-image: url('img/bg36.png');
     max-width: 100%;
+    margin-bottom: -30px; /* "Залазит" на следующую секцию */
+    position: relative;
+    z-index: 2;
+    max-width: 1920px;
+    padding: 150px 0;
+    margin-top: -30px
 }
 
 .contact-info {
@@ -455,17 +461,6 @@ margin-bottom: 50px;
     font-weight: 700;
     margin-bottom: 15px; 
     font-family: 'STIX Two Text';
-}
-.bord-61 {
-    top:-30px;
-    position: relative;
-    max-width: 100%;
-}
-.bord-62 {
-    top:60px;
-    position: relative;
-    z-index: 2;
-    max-width: 100%;
 }
 
 .screenshot-block {
@@ -659,7 +654,7 @@ margin-bottom: 40px;
 }
     
 .barbers-title {
-    padding-top: 70px;
+    padding-top: 20px;
     font-size: 48px; 
 }
 
@@ -762,12 +757,12 @@ margin-bottom: 40px;
     /* Смещаем основной фон к первому блоку */
     .hero-section {
         background: url('img/bgph1.png') no-repeat center top / cover;
-        min-height: calc(100vh - 120px); /* Учитываем высоту хедера */
-        margin-top: -150px; /* Убираем отступ сверху */
-        padding-top: 40px; /* Добавляем отступ внутри секции */
+        min-height: calc(100vh - 20px); 
+        margin-top: -150px; 
+        padding-top: 40px; 
+        padding-bottom: 40px;
     }
     
-    /* Дополнительно: делаем логотип более заметным на черном фоне */
     .logo img {
         filter: brightness(1.2); /* Увеличиваем яркость логотипа */
         padding: 10px 0;
@@ -797,6 +792,11 @@ margin-bottom: 40px;
     max-height: 388px;
     max-width: 240px;
 border-radius: 10px;
+}
+.services-section{
+    padding: 25px 0;
+    margin: -30px 0;
+    background-size: 150% 100%;
 }
 
 .text-overlay h2 {
@@ -828,8 +828,6 @@ max-width: auto;
 
 .services-container {
 flex-direction: column-reverse;
-top: -50px;
-position: relative;
 }
 .service-image{
     transform: rotate(-90deg);
@@ -841,37 +839,43 @@ position: relative;
     max-width: 240px;
 }
 .services-list {
-margin: 0;
-position: relative;
 padding: 0 10px;
-top: -40px;
 }
-.bord-4 {
-top: 20px;
-}
+
 .services-title{
      max-width: 80%; /* На всю ширину */
         padding: 0 20px; /* Отступы по бокам */
         margin: 0 auto; /* Обязательно для центрирования */
         text-align: center; /* Центрируем текст */
 }
-.bord-61 {
-    top: -10px;
-}
-.bord-62 {
-top: 20px;
-position: relative;
-z-index: 2;
-}
+
 .contact-block {
-    background-image: url('img/phone1.png');
+
     background-size: cover;       /* Масштабирует и обрезает */
     background-position: center;  /* Центрирует */
     background-repeat: no-repeat;
-    width: 100vh;
     position: relative;
     z-index: 1;
+    display: flex;
+    overflow: hidden;
+    padding: 50px 0;
+    background: url('img/bgph6.png') no-repeat center top / 150% 100%;;
 }
+.contact-block img{
+    max-height: 172px;
+    max-width: 150px;
+}
+.none1{
+position: relative;
+top: 210px;
+right: -70px;
+}
+.none2{
+position: relative;
+top: -100px;
+right: 70px;
+}
+
 .screenshot-block {
     top: 0;
 }
@@ -921,9 +925,8 @@ z-index: 2;
 
 }
 @media (min-width: 769px) {
-.show-more-btn {
+.show-more-btn, .none1, .none2 {
         display: none;
     }
 
 }
-
