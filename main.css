@@ -89,6 +89,8 @@ header nav ul li.btn-cta a {
     margin-top: 17vh; 
     text-align: center; 
     padding: 0 20px; 
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content {
@@ -107,7 +109,7 @@ header nav ul li.btn-cta a {
 
 .hero-text h1 {
     font-size: 28px;
-    color: #ffffff; /* Или другой цвет по вашему дизайну */
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -121,13 +123,13 @@ header nav ul li.btn-cta a {
 
 
 .about-section {
-    background: url('img/bg32.png') no-repeat center center/cover;
-    color: #000000;
-    margin-bottom: -100px; /* "Залазит" на следующую секцию */
+    background: url('img/bg51.png') center center/cover ;
+    color: white;
+    margin-bottom: -100px;
     position: relative;
     z-index: 2;
     max-width: 1920px;
-    padding: 100px 0;
+    padding: 150px 0;
     margin-top: -100px
 }
 
@@ -171,7 +173,6 @@ max-width: 100%
 .about-text h2 {
     font-size: 96px;
     margin-bottom: 20px;
-    color: #000000;
     font-weight: 800;
 }
 
@@ -185,13 +186,12 @@ max-width: 100%
 .highlight {
     font-weight: 700;
     font-size: 18px;
-    color: #000000;
 }
 
 .services-btn {
     background: transparent;
-    color: #000000; 
-    border: 2px solid #000000;
+    color: white; 
+    border: 2px solid white;
     border-radius: 50px;
     padding: 15px 50px;
     font-size: 20px;
@@ -207,7 +207,7 @@ max-width: 100%
 
 .services-btn:hover {
     scale: 105%;
-    color: #000000; 
+    color: whitesmoke; 
 }
                                               /* third select */
 
@@ -303,14 +303,15 @@ padding-top: 20px;
 
 .services-section {
     text-align: center; 
-    color: #000;
-    background: url('img/bg34.png') no-repeat center center/cover;
+    color: white;
+    background: url('img/bg52.png') no-repeat center center/cover;
     margin-bottom: -30px; 
     position: relative;
     z-index: 2;
     max-width: 1920px;
     padding: 150px 0;
     margin-top: -30px
+    
     
 }
 
@@ -387,6 +388,9 @@ margin-bottom: 50px;
     font-weight: 800;
 
 }
+.service-item img{
+max-width: 300px;
+}
 
 .gallery-container {
     display: flex;
@@ -423,7 +427,7 @@ margin-bottom: 50px;
 .contact-block {
     align-items: center;
     justify-content: center;
-    background-image: url('img/bg36.png');
+    background-image: url('img/bg53.png');
     max-width: 100%;
     margin-bottom: -30px; /* "Залазит" на следующую секцию */
     position: relative;
@@ -435,7 +439,7 @@ margin-bottom: 50px;
 
 .contact-info {
     text-align: center;
-    color: #000;
+    color: white;
     margin: 0 30px;
     z-index: 2; 
     margin-bottom: 40px;
@@ -624,6 +628,8 @@ font-weight: 700;
     display: none;
 }
 
+
+
 /* Показываем только на мобильных */
 @media (max-width: 1024px) {
 .burger-menu {
@@ -677,7 +683,7 @@ margin-bottom: 40px;
         width: 32px;
         height: 24px;
         transition: transform 0.3s ease;
-        top: 70px;
+        top: 60px;
     }
     
 .hero-text h1 {
@@ -687,7 +693,7 @@ margin-bottom: 40px;
 header nav {
     position: fixed;
     top: 0;
-    right: 685px;
+    right: 985px;
     width: 250px;
     height: 100vh;
     background-color: #1a1a1a;
@@ -752,21 +758,22 @@ header nav ul li.btn a:hover {
 header.container {
     background-color: #000; 
     padding-bottom: 20px;
+    z-index: 3;
 }
 
 /* Смещаем основной фон к первому блоку */
 .hero-section {
-    background: url('img/bgph1.png') no-repeat center top / cover;
-    min-height: calc(100vh - 20px); 
-    margin-top: -150px; 
-    padding-top: 40px; 
+    min-height: calc(-20px + 100vh);
+    margin-top: -150px;
+    padding-top: 40px;
     padding-bottom: 40px;
+    background: url(img/bgph1.png) center top / cover no-repeat;
 }
 
 .logo img {
     filter: brightness(1.2); 
-    padding: 10px 0;
-    
+    padding: 4px 0;
+    left: 35%;
 }
 .hero-image {
     margin-top: 200px;
@@ -780,10 +787,8 @@ header.container {
     flex-direction: column-reverse;
 }
 .about-image img {
-    left: 40px;
-    top: -125px;
-    max-height: 330px;
-    max-width: auto;
+top: -105px;
+max-height: 250px;
 }
 .services-btn {
     top: 330px;
@@ -797,6 +802,7 @@ border-radius: 10px;
     padding: 25px 0;
     margin: -30px 0;
     background-size: 150% 100%;
+    overflow: hidden;
 }
 
 .text-overlay h2 {
@@ -806,7 +812,10 @@ border-radius: 10px;
 }
 
 .text-overlay {
-    max-width: 230px;
+max-width: 230px;
+left: 115px;
+top: -85px;
+padding-bottom: 0;
 }
 .text-overlay p {
     padding-bottom: 0;
@@ -824,6 +833,7 @@ padding: 10px 40px;
 .background-image {
 max-height: 450px;
 max-width: auto;
+left: 190px;
 }
 
 .services-container {
@@ -859,7 +869,7 @@ padding: 0 10px;
     display: flex;
     overflow: hidden;
     padding: 50px 0;
-    background: url('img/bgph6.png') no-repeat center top / 150% 100%;;
+    background: url('img/bg52.png') no-repeat center top / 150% 100%;;
 }
 .contact-block img{
     max-height: 172px;
@@ -938,4 +948,107 @@ right: 70px;
 header nav{
 width: 75%;
 }
+}
+
+/* Для десктопа - показываем обычные фото */
+.desktop-barbers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.desktop-barbers .barber-img {
+    width: 30%;
+    height: auto;
+}
+
+/* Для мобильных - скрываем обычную версию */
+@media (max-width: 768px) {
+.barbers-images {
+    left: 200px;
+}
+.desktop-barbers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.barber-card {
+    width: 30%;
+    position: relative;
+}
+}
+/* Для мобильных - скрываем обычную версию */
+@media (max-width: 768px) {
+    .desktop-barbers {
+        display: none;
+    }
+    
+    /* Стили для карусели */
+    .mobile-carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+    
+    .carousel-track {
+        display: flex;
+        width: 160%; /* 3 фото = 300% */
+    }
+    
+    .carousel-slide {
+        width: 70vw; /* Ширина экрана */
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        position: relative;
+    }
+    
+    .carousel-slide .barber-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Контент поверх фото */
+    .slide-content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    .slide-content h2 {
+        color: #d4af37;
+        margin-bottom: 10px;
+    }
+    
+    .slide-content .btn {
+        background: #d4af37;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+/* Для десктопа - скрываем карусель */
+@media (min-width: 769px) {
+    .mobile-carousel {
+        display: none;
+    }
+    
+    .slide-content {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .slide-content h2 {
+        color: #d4af37;
+    }
 }
