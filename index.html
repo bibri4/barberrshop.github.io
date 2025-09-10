@@ -7,6 +7,8 @@
     <meta name="description" content="web.burbershop">
     <title>web.burbershop</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
 </head>
 <body>
   <div class="wrapper">      
@@ -23,7 +25,7 @@
                 <li class="btn"> <a href="#about us">О НАС</a></li>
                 <li class="btn"> <a href="#uslugi">УСЛУГИ</a></li>
                 <li class="btn"> <a href="#burbers">БАРБЕРЫ</a></li>
-                <li class="btn"> <a href="#gallery">ГАЛЕРЕЯ</a></li>
+                <li class="btn"> <a href="#gallery">ГАЛЛЕРЕЯ</a></li>
                 <li class="btn"> <a href="#contacts">КОНТАКТЫ</a></li>
                 <li class="btn btn-cta"> <a href="#mainbtn">ЗАПИСАТЬСЯ</a></li>
             </ul>
@@ -45,7 +47,7 @@
     <div class="container">
         <div class="about-content">
             <div class="about-image">
-                <img src="img/1Group.png" alt="Интерьер барбершопа">
+                <img src="img/barberpool.svg" alt="Интерьер барбершопа">
             </div>
             <div class="about-text">
                 <h2>О НАС</h2>
@@ -60,21 +62,54 @@
                                             <!-- third block -->
   
   <div class="barbers-section" id="burbers">
- 
       <div class="barbers-title">БАРБЕРЫ</div>
       <div class="barbers-images">
         <img src="img/Xyell.png" alt="" class="background-image">
-          <div class="barber-img">
+        <div class="mobile-carousel">
+            <div class="carousel-track">
+                <!-- Слайд 1 -->
+                <div class="carousel-slide">
+                <img src="img/barb1.png" alt="Барбер 1" class="barber-img">
+                </div>
+                <div class="carousel-slide">
+                <img src="img/barb2.png" alt="Барбер 2" class="barber-img">
+            <div class="slide-content">
+                <div class="text-overlay">
+                    <h2>ДАРЬЯ</h2>
+                    <p>Наш администратор Дарья стала барбером, и эта новость всколыхнула наше заведение.</p>
+                    <button class="btn full-version">ЗАПИСАТЬСЯ YCLIENTS</button>
+                    <button class="btn mobile-version">ЗАПИСАТЬСЯ</button>
+                </div>
+            </div>    
+            </div>
+             <div class="carousel-slide">
+                <img src="img/barb3.png" alt="Барбер 3" class="barber-img">
+                </div>
+            </div>
+        </div>
+                        <!-- Обычная версия для десктопа -->
+        <div class="desktop-barbers">
             <img src="img/barb1.png" alt="Барбер 1" class="barber-img">
             <div class="text-overlay">
-                <h2>ДАРЬЯ</h2>
-                <p>Наш администратор Дарья стала барбером, и эта новость всколыхнула наше заведение.</p>
-                <button class="btn full-version">ЗАПИСАТЬСЯ YCLIENTS</button>
-                <button class="btn mobile-version">ЗАПИСАТЬСЯ</button>
-            </div>
-        <img src="img/barb2.png" alt="Барбер 2" class="barber-img">
-        <img src="img/barb3.png" alt="Барбер 3" class="barber-img">
+                    <h2>ДАРЬЯ</h2>
+                    <p>Наш администратор Дарья стала барбером, и эта новость всколыхнула наше заведение.</p>
+                    <button class="btn full-version">ЗАПИСАТЬСЯ YCLIENTS</button>
+                    <button class="btn mobile-version">ЗАПИСАТЬСЯ</button>
+                </div>
+            <img src="img/barb2.png" alt="Барбер 2" class="barber-img">
+            <img src="img/barb3.png" alt="Барбер 3" class="barber-img">
         </div>
+        <!-- <div class="barber-img">
+            <img src="img/barb1.png" alt="Барбер 1" class="barber-img">
+                <div class="text-overlay">
+                    <h2>ДАРЬЯ</h2>
+                    <p>Наш администратор Дарья стала барбером, и эта новость всколыхнула наше заведение.</p>
+                    <button class="btn full-version">ЗАПИСАТЬСЯ YCLIENTS</button>
+                    <button class="btn mobile-version">ЗАПИСАТЬСЯ</button>
+                </div>
+            <img src="img/barb2.png" alt="Барбер 2" class="barber-img">
+            <img src="img/barb3.png" alt="Барбер 3" class="barber-img">
+        </div> -->
     </div>
   </div>
                                       <!-- servise block(fourth) -->
@@ -86,50 +121,50 @@
                 <span class="service-name">Мужская стрижка</span>
                 <span class="service-price">1500 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Мужская стрижка у Старшего Барбера</span>
                 <span class="service-price">1800 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Детская стрижка (до 14 лет)</span>
                 <span class="service-price">1200 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Комплекс (мужская стрижка + оформление бороды)</span>
                 <span class="service-price">2000 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Комплекс (мужская стрижка + оформление бороды) у Старшего Барбера</span>
                 <span class="service-price">2500 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Стрижка (оформление) бороды</span>
                 <span class="service-price">800 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Тонировка бороды</span>
                 <span class="service-price">900 ₽</span>
             </div>
-            <div class="divider"></div>
+            <img src="img/Linemain.png" alt="">
             <div class="service-item">
                 <span class="service-name">Тонирование волос</span>
                 <span class="service-price">1200 ₽</span>
             </div>
         </div>
         <div class="image-container">
-            <img src="img/righ4.png" alt="Услуга" class="service-image">
+            <img src="img/elements.svg" alt="Услуга" class="service-image">
         </div>
     </div>
 </div>
                                                 <!-- image block(five) -->                                        
     <div class="gallery" id="gallery">
-        <h1>ГАЛЕРЕЯ</h1>
+        <h1>ГАЛЛЕРЕЯ</h1>
         <div class="gallery-container">
             <div class="gallery-item top-row">
                 <img src="img/1gal.png" alt="Фото 1" class="gallery-item mobile-visible">
@@ -160,7 +195,7 @@
     </div>
                                             <!-- contacts block -->
     <div class="contact-block" id="contacts">
-        <div class="none1"> <img src="img/contimg1.png" alt=""></div>
+        <div class="none1"> <img src="img/elem_cont_1.svg" alt=""></div>
         <div class="contact-info">
             <h2>КОНТАКТЫ</h2>
             <p class="contact-label">Телефон</p>
@@ -174,7 +209,7 @@
             <p class="contact-label">Мы в VK</p>
             <p class="contact-detail">FIRMASAMARA</p>
         </div>
-        <div class="none2"> <img src="img/contimg2.png" alt=""></div>
+        <div class="none2"> <img src="img/barberpool.svg" alt=""></div>
     </div>
     <div class="screenshot-block">
     <img src="img/map2.png" alt="Карта" class="screenshot-image" 
@@ -189,7 +224,7 @@
             <span><a href="#about us">О НАС</a></span>
             <span><a href="#uslugi">УСЛУГИ</a></span>
             <span><a href="#burbers">БАРБЕРЫ</a></span>
-            <span><a href="#gallery">ГАЛЕРЕЯ</a></span>
+            <span><a href="#gallery">ГАЛЛЕРЕЯ</a></span>
             <span><a href="#contacts">КОНТАКТЫ</a></span>
         </div>
         <div class="back-to-top">
@@ -200,5 +235,4 @@
 </footer>
 <script src="script.js" defer></script>
 </body> 
-
 </html>

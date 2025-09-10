@@ -102,3 +102,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+if (window.innerWidth <= 768) {
+    let currentSlide = 0;
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-track .barber-img');
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        track.scrollTo({
+            left: currentSlide * window.innerWidth,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Автопрокрутка каждые 3 секунды
+    setInterval(nextSlide, 3000);
+}
