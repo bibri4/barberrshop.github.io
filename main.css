@@ -945,10 +945,9 @@ right: 70px;
 
 }
 @media (min-width: 769px) {
-.show-more-btn, .none1, .none2 {
+.show-more-btn, .none1, .none2, .none3{
         display: none;
     }
-
 }
 
 @media (max-width: 1700px) {
@@ -1063,4 +1062,5 @@ width: 75%;
     }
 
 }
+
 
