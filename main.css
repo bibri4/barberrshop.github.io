@@ -40,13 +40,14 @@ position: relative;
 padding-top: 20px; 
 }
 
-.container .show-more-btn{ 
+.none3{ 
 border: none;
 margin-right: -60px;
 padding: 0;
 right: -20px;
 top: -20px;
 position: relative;
+background: none;
 }
 
 .wrapper{
@@ -1062,3 +1063,4 @@ width: 75%;
     }
 
 }
+
