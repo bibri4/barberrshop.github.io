@@ -40,6 +40,15 @@ position: relative;
 padding-top: 20px; 
 }
 
+.container .show-more-btn{ 
+border: none;
+margin-right: -60px;
+padding: 0;
+right: -20px;
+top: -20px;
+position: relative;
+}
+
 .wrapper{
 background: url('img/1bg2.png') no-repeat center center;
 min-height: 100vh;
@@ -1051,4 +1060,5 @@ width: 75%;
     .slide-content h2 {
         color: #d4af37;
     }
+
 }
