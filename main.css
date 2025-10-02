@@ -993,10 +993,8 @@ width: 75%;
         display: none;
     }
     
-    /* Стили для карусели */
     .mobile-carousel {
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         width: 100%;
@@ -1004,11 +1002,11 @@ width: 75%;
     
     .carousel-track {
         display: flex;
-        width: 160%; /* 3 фото = 300% */
+        width: 147%; 
     }
     
     .carousel-slide {
-        width: 70vw; /* Ширина экрана */
+        width: 70vw; 
         flex-shrink: 0;
         scroll-snap-align: start;
         position: relative;
@@ -1046,7 +1044,6 @@ width: 75%;
     }
 }
 
-/* Для десктопа - скрываем карусель */
 @media (min-width: 769px) {
     .mobile-carousel {
         display: none;
@@ -1062,5 +1059,6 @@ width: 75%;
     }
 
 }
+
 
 
